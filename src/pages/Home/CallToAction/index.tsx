@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 import { Container, Buttons } from './styles';
 
@@ -13,7 +14,10 @@ const CallToAction: React.FC = () => (
       
       <section className="covid-button">
         <small>Saiba mais sobre a</small>
-        <button className="covid" type="button">COVID-19</button>
+
+        <NavLink to="/covid">
+          <button className="covid" type="button">COVID-19</button>
+        </NavLink>
       </section>
     </Buttons>
   </Container>

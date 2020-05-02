@@ -6,7 +6,7 @@ export const Container = styled.div`
   h1 {
     font-size: 5.5rem;
     line-height: 8.5rem;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 900;
     color: #234878;
   }
@@ -31,6 +31,10 @@ export const Buttons = styled.section`
   width: 100%;
   max-width: 430px;
   align-items: flex-end;
+
+  button, a {
+    text-decoration: none;
+  }
 
   button.signin {
     font-size: 2.2rem;
