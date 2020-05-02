@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { ModalLink } from 'react-router-modal-gallery';
 
 import { Container, Buttons } from './styles';
 
@@ -10,7 +11,9 @@ const CallToAction: React.FC = () => (
     <p>Em tempo de Corona Vírus, mantenha-se bem protegido e evite frequentar lugares movimentados, levar as mãos nos olhos, nariz e boca, e não se esqueça de tomar sua dose diária de luz solar.</p>
 
     <Buttons>
-      <button className="signin" type="button">Entrar</button>
+      <ModalLink to="/login">
+        <button className="signin" type="button">Entrar</button>
+      </ModalLink>
       
       <section className="covid-button">
         <small>Saiba mais sobre a</small>
